@@ -14,6 +14,128 @@
               </style>
 </head>
 <body>
-    <h1>1</h1>          
+    <h1>Grid Layout</h1>
+    <details><button>CSS Grid Layout introduz um sistema bi-dimensional de grid (literalmente "grades") para CSS. Grids podem ser usados para o design de layouts de grandes seções de uma webpage, assim como de pequenos elementos de interface. Esse artigo apresenta o CSS Grid Layout e a terminologia que é parte da especificação  CSS Grid Layout Level 1. As funcionalidades demonstradas neste resumo serão posteriormente explicadas em maiores detalhes nas demais seções desse guia.</button></details>
+    <br>
+    <h1>O que é grid?
+    </h1>
+    <br>
+    <details><button>Grid é uma malha formada pela interseção de um conjunto de linhas horizontais e um conjunto de linhas verticais – um dos conjuntos define colunas e outro linhas. Dentro de um  grid, respeitando-se a configuração criada pelas suas linhas, pode-se inserir elementos da marcação. As CSS grid layout preveem as seguintes funcionalidades:</button></details>
+    <br>
+    <h3>Dimensões fixas ou flexíveis</h3>
+    <details><button>Você pode criar grids com dimensões fixas – por exemplo: definindo dimensões em pixels. Ou criar grids com dimensões flexíveis definindo-as com uso de porcentagem ou da nova unidade CSS fr criada para esse propósito.</button></details>
+    <br>
+    <h3>Posicionamento de itens</h3>
+    
+    <details><button>Você pode posicionar com precisão itens de uma página usando o número que define uma linha do grid, usando nomes ou ainda fazendo referência a uma determinada região do grid. Existe ainda um algorítmo de controle do posicionamento de itens da página que não possuem uma posição capaz de ser explícitamente definida no grid.</button></details>
+    <br>
+    <h1>Criação de grids adicionais</h1>
+    <details><button>Além da possibilidade de se criar um grid inicial para o layout a Especificação prevê também a possibilidade de se adicionar linhas e colunas para layoutar conteúdos adicionados fora do grid inicial. Funcionalidades tal como adicionar "tantas colunas quanto necessárias em um grid container existente" são previstas nas Especificações.</button></details>
+    <br>
+    <h2>Alinhamento</h2>
+    <details><button>Estão previstas funcionalidades de alinhamento que possibilitam controlar o alinhamento dos itens de uma página posicionados no grid e também o alinhamento do próprio grid como um todo.</button></details>
+    <br>
+    <h1>Atributos</h1>
+    
+    <details><button>This element includes the global attributes.
+
+        alink 
+        Color of text for hyperlinks when selected. This method is non-conforming, use CSS color property in conjunction with the :active pseudo-class instead.
+        
+        background 
+        URI of a image to use as a background. This method is non-conforming, use CSS background property on the element instead.
+        
+        bgcolor 
+        Background color for the document. This method is non-conforming, use CSS background-color property on the element instead.
+        
+        bottommargin 
+        The margin of the bottom of the body. This method is non-conforming, use CSS margin-bottom property on the element instead.
+        
+        leftmargin 
+        The margin of the left of the body. This method is non-conforming, use CSS margin-left property on the element instead.
+        
+        link 
+        Color of text for unvisited hypertext links. This method is non-conforming, use CSS color property in conjunction with the :link pseudo-class instead.
+        
+        onafterprint
+        Function to call after the user has printed the document.
+        
+        onbeforeprint
+        Function to call when the user requests printing of the document.
+        
+        onbeforeunload
+        Function to call when the document is about to be unloaded.
+        
+        onblur
+        Function to call when the document loses focus.
+        
+        onerror
+        Function to call when the document fails to load properly.
+        
+        onfocus
+        Function to call when the document receives focus.
+        
+        onhashchange
+        Function to call when the fragment identifier part (starting with the hash ('#') character) of the document's current address has changed.
+        
+        onlanguagechange 
+        Function to call when the preferred languages changed.
+        
+        onload
+        Function to call when the document has finished loading.
+        
+        onmessage
+        Function to call when the document has received a message.
+        
+        onoffline
+        Function to call when network communication has failed.
+        
+        ononline
+        Function to call when network communication has been restored.
+        
+        onpopstate
+        Function to call when the user has navigated session history.
+        
+        onredo
+        Function to call when the user has moved forward in undo transaction history.
+        
+        onresize
+        Function to call when the document has been resized.
+        
+        onstorage
+        Function to call when the storage area has changed.
+        
+        onundo
+        Function to call when the user has moved backward in undo transaction history.
+        
+        onunload
+        Function to call when the document is going away.
+        
+        rightmargin 
+        The margin of the right of the body. This method is non-conforming, use CSS margin-right property on the element instead.
+        
+        text 
+        Foreground color of text. This method is non-conforming, use CSS color property on the element instead.
+        
+        topmargin 
+        The margin of the top of the body. This method is non-conforming, use CSS margin-top property on the element instead.
+        
+        vlink 
+        Color of text for visited hypertext links. This method is non-conforming, use CSS color property in conjunction with the :visited pseudo-class instead.</button></details>
+        <br>
+        <h1>Controle sobre conteúdos sobrepostos</h1>
+        <details><button>Em uma célula do grid podem ser posicionados mais de um item da página e também é possível que se defina sobreposição parcial de áreas. Esse controle de layers é feito com uso de z-index (en-US).((CSS Grid Layout é uma poderosa especificação que se for combinada com outras partes do CSS, tal como flexbox, possibilita a criação de layouts que até então eram impossíveis de serem criados com CSS. Tudo começa com a criação de um grid dentro de um grid container.))</button></details>
+        <h1>Grid container</h1>
+        <details><button>Cria-se um grid container com as declarações CSS display: grid ou display: inline-grid para um elemento da marcação. Assim declarando, todos os elementos filhos diretos daquele container se transformam em grid items. <br>
+
+          <mark>  No exemplo mostrado a seguir um elemento div container ao qual foi atribuída a classe wrapper contém cinco elementos filhos.</mark></button></details>
+          <details><button><div.
+          <div class="wrapper">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+         </div></button></details>
 </body>
 </html>
